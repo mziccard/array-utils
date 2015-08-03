@@ -1,8 +1,8 @@
-apply plugin: 'java'
-
 plugins {
     id "com.jfrog.bintray" version "1.2"
 }
+
+apply plugin: 'java'
 
 repositories {
     mavenCentral()
@@ -20,19 +20,24 @@ allprojects {
     }
 }
 
+group = 'me.mziccard'
+version = '0.1'
+
 bintray {
     user = System.getenv('BINTRAY_USER')
     key = System.getenv('BINTRAY_KEY')
+    publish = true
     pkg {
         repo = 'maven'
         name = 'array-utils'
         licenses = ['MIT']
         vcsUrl = 'https://github.com/mziccard/array-utils.git'
+        configurations = ['archives']
         version {
             name = '0.1'
             desc = 'A bunch of recurrent Java mathematical functions on arrays you are tired to implement again and again.'
             released  = new Date()
-            vcsTag = '0.1'
+            vcsTag = 'v0.1'
         }
     }
 }
