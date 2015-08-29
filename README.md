@@ -3,6 +3,9 @@
 A bunch of recurrent Java mathematical functions on arrays you are tired to implement again and again.  
 The library is made of a single abstract class `ArrayUtils` with a number of static methods.
 
+[![MIT license](http://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT)
+[![Release 0.1](https://img.shields.io/badge/release-0.1-brightgreen.svg)](https://bintray.com/mziccard/maven/array-utils/_latestVersion)
+
 ## Usage
 
 Latest version is `0.1`, corresponding to git tag `v0.1`. Follow instructions below to add it as a dependency to your project.
