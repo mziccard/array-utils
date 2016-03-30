@@ -11,7 +11,7 @@ public class ArrayUtilsTest {
   public final ExpectedException exception = ExpectedException.none();
 
   @Test 
-  public void shouldConvertShortToInt() throws DifferentLengthException {
+  public void shouldConvert_ShortToInt() throws DifferentLengthException {
     short[] a = {1, 2, 3};
     int[] b = {1, 2, 3};
     Assert.assertArrayEquals(
